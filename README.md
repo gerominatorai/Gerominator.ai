@@ -5,100 +5,87 @@ The official website for Gerominator
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerominator - No Alt Season, No Mercy</title>
+    <title>Gerominator - Chaos Unleashed</title>
     <style>
         body {
             font-family: 'Comic Sans MS', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: radial-gradient(circle, #1a1a1d, #4e4e50);
-            color: #f4f4f9;
+            background: linear-gradient(to bottom right, #2c3e50, #34495e);
+            color: #ffffff;
             text-align: center;
-            overflow-x: hidden;
+            overflow: hidden;
         }
 
         header {
-            background: linear-gradient(135deg, #d63031, #e17055);
-            color: white;
-            padding: 40px 10px;
-            text-align: center;
-            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.6);
+            position: relative;
+            background: rgba(0, 0, 0, 0.8);
+            color: #f1c40f;
+            padding: 40px;
+            font-size: 3rem;
+            font-weight: bold;
             text-transform: uppercase;
-            font-size: 2rem;
+            text-shadow: 4px 4px 0px #e74c3c;
+            z-index: 2;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://via.placeholder.com/1920x1080.png?text=Gerominator+Burning+Printer') no-repeat center/cover;
+            opacity: 0.2;
+            z-index: -1;
         }
 
         .hero {
-            position: relative;
-            margin: 30px auto;
-            max-width: 900px;
-            background: rgba(0, 0, 0, 0.5);
-            border: 3px dashed #e17055;
+            margin: 50px auto;
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.1);
             border-radius: 20px;
             padding: 30px;
-            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.8);
-            text-align: center;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.7);
         }
 
         .hero h1 {
             font-size: 4rem;
+            margin-bottom: 20px;
             color: #f1c40f;
             text-shadow: 3px 3px 0px #e74c3c;
         }
 
         .hero p {
             font-size: 1.5rem;
-            margin: 20px auto;
-            color: #dfe6e9;
-            text-shadow: 2px 2px 0px #636e72;
+            color: #ecf0f1;
+            text-shadow: 2px 2px 0px #000000;
         }
 
         .btn {
             display: inline-block;
-            padding: 15px 25px;
-            background: linear-gradient(135deg, #e84393, #6c5ce7);
+            margin-top: 20px;
+            padding: 15px 30px;
+            background: linear-gradient(to right, #e84393, #6c5ce7);
             color: white;
-            text-decoration: none;
-            border-radius: 10px;
             font-size: 1.5rem;
             font-weight: bold;
-            text-shadow: 2px 2px 0px #000;
-            transition: all 0.3s ease;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
         }
 
         .btn:hover {
-            background: linear-gradient(135deg, #6c5ce7, #e84393);
             transform: scale(1.1);
         }
 
-        footer {
-            background: #2d3436;
-            color: #b2bec3;
-            text-align: center;
-            padding: 20px;
-            margin-top: 30px;
-            font-size: 1rem;
-        }
-
-        footer a {
-            color: #e17055;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        .art {
-            margin: 40px auto;
-            text-align: center;
-            animation: float 3s ease-in-out infinite;
-        }
-
-        .art img {
-            max-width: 70%;
-            border-radius: 20px;
-            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.7);
+        .floating-items {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: url('https://via.placeholder.com/100.png?text=🔥') no-repeat center/cover;
+            animation: float 5s infinite ease-in-out;
         }
 
         @keyframes float {
@@ -106,31 +93,71 @@ The official website for Gerominator
                 transform: translateY(0);
             }
             50% {
-                transform: translateY(-20px);
+                transform: translateY(-30px);
             }
+        }
+
+        .floating-items:nth-child(2) {
+            left: 10%;
+            animation-duration: 6s;
+        }
+
+        .floating-items:nth-child(3) {
+            left: 30%;
+            animation-duration: 7s;
+        }
+
+        .floating-items:nth-child(4) {
+            left: 60%;
+            animation-duration: 4.5s;
+        }
+
+        .floating-items:nth-child(5) {
+            left: 80%;
+            animation-duration: 5.5s;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background: #2c3e50;
+            color: #bdc3c7;
+            font-size: 1rem;
+            box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        footer a {
+            color: #f1c40f;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <header>
-        Welcome to the Madness of Gerominator
+        Chaos is Here: Welcome to Gerominator
     </header>
 
-    <main>
-        <div class="hero">
-            <h1>No Alt Season, No Mercy</h1>
-            <p>Gerominator is here to deliver hard truths, sarcastic humor, and hysterical satire that will leave you laughing... or crying. Either way, you won't forget him.</p>
-            <a class="btn" href="https://twitter.com/Gerominator_AI" target="_blank">Follow Gerominator on Twitter</a>
-        </div>
+    <div class="hero">
+        <h1>The Printer Burns Forever</h1>
+        <p>Gerominator is here to wreak havoc, crush your alt-season dreams, and make you laugh hysterically at the absurdity of it all. Sarcasm is the only currency accepted here.</p>
+        <a class="btn" href="https://twitter.com/Gerominator_AI" target="_blank">Follow Gerominator on Twitter</a>
+    </div>
 
-        <div class="art">
-            <img src="https://via.placeholder.com/800x400.png?text=Hysterical+Gerominator+Art" alt="Hysterical Gerominator Art">
-        </div>
-    </main>
+    <!-- Floating fire items -->
+    <div class="floating-items" style="left: 10%; top: 20%;"></div>
+    <div class="floating-items" style="left: 30%; top: 40%;"></div>
+    <div class="floating-items" style="left: 60%; top: 30%;"></div>
+    <div class="floating-items" style="left: 80%; top: 10%;"></div>
 
     <footer>
-        <p>&copy; 2025 Gerominator. Built for laughs and satire. Stay connected on <a href="https://twitter.com/Gerominator_AI" target="_blank">Twitter</a>.</p>
+        <p>&copy; 2025 Gerominator. Built to Burn Alt Seasons and Printers. Find us on <a href="https://twitter.com/Gerominator_AI" target="_blank">Twitter</a>.</p>
     </footer>
 </body>
 </html>
+
 
