@@ -11,7 +11,7 @@ The official website for Gerominator
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background: url('A_minimalistic,_satirical_caricature_of_Gerominato.png') no-repeat center center fixed;
+            background: url('background.png') no-repeat center center fixed;
             background-size: cover;
             color: #ffffff;
             overflow: hidden;
